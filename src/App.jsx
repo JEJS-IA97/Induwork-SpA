@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
+import TermsConditionsPage from "./pages/TycPage";
+import PrivacyPolicesPage from "./pages/PrivacyPage";
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -20,7 +23,24 @@ function App() {
 
   return (
     <div className="min-h-screen bg-[#efefef] text-black transition-colors dark:bg-zinc-950 dark:text-white">
-      <HomePage darkMode={darkMode} setDarkMode={setDarkMode} />
+      <Routes>
+        <Route 
+          path="/" 
+          element={<HomePage darkMode={darkMode} setDarkMode={setDarkMode} />} 
+        />
+        <Route 
+          path="/terminos-y-condiciones" 
+          element={<TermsConditionsPage darkMode={darkMode} setDarkMode={setDarkMode} />} 
+        />
+        <Route 
+          path="/politica-de-privacidad" 
+          element={<PrivacyPolicesPage darkMode={darkMode} setDarkMode={setDarkMode} />} 
+        />
+        <Route 
+          path="/tienda/:categoria" 
+          element={<HomePage darkMode={darkMode} setDarkMode={setDarkMode} />} 
+        />
+      </Routes>
     </div>
   );
 }

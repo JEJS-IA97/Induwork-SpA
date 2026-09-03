@@ -37,26 +37,46 @@ const Footer = ({ darkMode }) => {
                         <h4 className="uppercase font-bold text-black dark:text-white mb-1">Información</h4>
                         <a href="#" className="hover:underline">Nosotros</a>
                         <a href="#" className="hover:underline">Servicios</a>
-                        <a href="#" className="hover:underline">Términos y condiciones</a>
-                        <a href="#" className="hover:underline">Política de privacidad</a>
+                        <a href="/terminos-y-condiciones" className="hover:underline">Términos y condiciones</a>
+                        <a href="/politica-de-privacidad" className="hover:underline">Política de privacidad</a>
                     </div>
 
                     <div className="flex flex-col gap-3 text-sm text-gray-600 dark:text-[#c3c4c3]">
                         <h4 className="uppercase font-bold text-black dark:text-white mb-1">¿Necesitas ayuda?</h4>
                         <p className="text-xs">Estamos aquí para ayudarte</p>
-                        
-                        <div className="flex items-start gap-2">
+
+                        <a 
+                            href="https://maps.google.com/?q=Antonio+Bellet+193,+Oficina+1210,+Providencia,+Santiago" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="flex items-start gap-2 hover:underline transition-all"
+                        >
                             <BsGeoAltFill className="text-[#f59a26] shrink-0 mt-1"/>
                             <span>Antonio Bellet 193, Oficina 1210, Providencia</span>
-                        </div>
+                        </a>
+
                         <div className="flex items-center gap-2">
                             <BsFillTelephoneFill className="text-[#f59a26] shrink-0"/>
-                            <span>+56 9 9361 9179</span>
+                            <a href="tel:+56993619179" className="hover:underline transition-all md:hidden">
+                                +56 9 9361 9179
+                            </a>
+                            <a 
+                                href="https://wa.me/56993619179" 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                className="hidden md:inline hover:underline transition-all"
+                            >
+                                +56 9 9361 9179
+                            </a>
                         </div>
-                        <div className="flex items-center gap-2">
+
+                        <a 
+                            href="mailto:ventas@induwork.cl" 
+                            className="flex items-center gap-2 hover:underline transition-all"
+                        >
                             <BsEnvelopeFill className="text-[#f59a26] shrink-0" />
                             <span>ventas@induwork.cl</span>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>

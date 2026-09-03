@@ -1,6 +1,6 @@
 import HeroBanner from '../components/HeroBanner';
 import Navbar from '../components/Navbar';
-import Routes from '../components/NavRutes';
+import Routes from '../components/NavRoutes';
 import HomeCategory from '../components/HomeCategory';
 import BestSellers from '../components/BestSellers';
 import News from '../components/News';

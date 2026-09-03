@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 
 const BestSellers = () => {
     return (
-        <div className="flex w-full flex-col gap-4 px-[60px] py-6 text-black dark:text-white">
+        <div className="flex w-full flex-col gap-4 px-[60px] py-[40px] text-black dark:text-white">
         <div className="h-[2px] w-[20px] bg-[#f59a26]" />
         <div className="flex items-center justify-between">
             <h2 className="text-xl font-bold uppercase tracking-wide">
