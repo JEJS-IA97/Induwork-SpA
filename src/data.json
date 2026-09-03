@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "nombre": "Lentes Balísticos",
+    "subnombre": "ANS 3 Micas",
+    "precio": 98175.00,
+    "rating": 4,
+    "reviewsCount": 25,
+    "categoria": "Equipo Balístico",
+    "imagen": "../images/image-01.png"
+  },
+  {
+    "id": 2,
+    "nombre": "Bastón Retráctil",
+    "subnombre": "Gargouille Polímero",
+    "precio": 44178.75,
+    "rating": 3,
+    "reviewsCount": 0,
+    "categoria": "Equipo Táctico",
+    "imagen": "../images/image-02.png"
+  },
+  {
+    "id": 3,
+    "nombre": "Balaclava Térmica",
+    "subnombre": "Elástica",
+    "precio": 3927.00,
+    "rating": 4,
+    "reviewsCount": 12,
+    "categoria": "Equipo Táctico",
+    "imagen": "../images/image-03.png"
+  },
+  {
+    "id": 4,
+    "nombre": "Porta Bastón Retráctil",
+    "subnombre": "Táctico 360°",
+    "precio": 4125.00,
+    "rating": 4.5,
+    "reviewsCount": 5,
+    "categoria": "Equipo Táctico",
+    "imagen": "../images/image-04.png"
+  },
+  {
+    "id": 5,
+    "nombre": "Cinturón Táctico Militar",
+    "subnombre": "Multipouch 140 cm",
+    "precio": 6000,
+    "rating": 4,
+    "reviewsCount": 15,
+    "categoria": "Equipo Táctico",
+    "imagen": "../images/image-05.png"
+  },
+  {
+    "id": 6,
+    "nombre": "Guante Táctico",
+    "subnombre": "Negro Cortos",
+    "precio": 20682.20,
+    "rating": 5,
+    "reviewsCount": 30,
+    "categoria": "Equipo Táctico",
+    "imagen": "../images/image-06.png"
+  },
+  {
+    "id": 7,
+    "nombre": "Polera Táctica Negra",
+    "subnombre": "Manga Larga",
+    "precio": 15021.00,
+    "rating": 5,
+    "reviewsCount": 22,
+    "categoria": "Seguridad",
+    "imagen": "../images/image-07.png"
+  },
+  {
+    "id": 8,
+    "nombre": "Botas Tácticas Militares",
+    "subnombre": "Delta Caña Alta",
+    "precio": 32214.28,
+    "rating": 4.5,
+    "reviewsCount": 50,
+    "categoria": "Calzado",
+    "imagen": "../images/image-08.png"
+  },
+  {
+    "id": 9,
+    "nombre": "Chaleco Anticorte",
+    "subnombre": "Protección Urbana",
+    "precio": 71995.00,
+    "rating": 5,
+    "reviewsCount": 50,
+    "categoria": "Equipo Balístico",
+    "imagen": "../images/image-09.png"
+  },
+  {
+    "id": 10,
+    "nombre": "Pantalón Combate",
+    "subnombre": "Táctico Ripstop",
+    "precio": 12650.00,
+    "rating": 3,
+    "reviewsCount": 60,
+    "categoria": "Equipo Táctico",
+    "imagen": "../images/image-10.png"
+  }
+]

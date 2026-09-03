@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 841.89 188">
+  <!-- Generator: Adobe Illustrator 29.5.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 141)  -->
+  <defs>
+    <style>
+      .st0, .st1 {
+        fill: #343833;
+      }
+
+      .st2 {
+        fill: #f59a26;
+      }
+
+      .st3, .st4 {
+        font-family: Montserrat-Bold, Montserrat;
+        font-size: 108.61px;
+        font-weight: 700;
+      }
+
+      .st4 {
+        fill: #104171;
+      }
+
+      .st1 {
+        font-family: Montserrat-SemiBold, Montserrat;
+        font-size: 31.74px;
+        font-weight: 600;
+      }
+    </style>
+  </defs>
+  <text class="st1" transform="translate(151.71 163.1)"><tspan x="0" y="0">PROFESSIONAL TACTICAL GEAR</tspan></text>
+  <g>
+    <text class="st3" transform="translate(63.22 108.24) rotate(.24) scale(1.04 .99) skewX(-5.79)"><tspan class="st0" x="0" y="0">INDU</tspan><tspan class="st2" x="298.67" y="0">WORK</tspan></text>
+    <text class="st4" transform="translate(536.45 110.24) rotate(.24) scale(1.04 .99) skewX(-5.79)"><tspan x="0" y="0"> </tspan></text>
+  </g>
+</svg>
