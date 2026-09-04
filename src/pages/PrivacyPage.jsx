@@ -11,6 +11,12 @@ const sections = [
             </p>
             <div className="overflow-x-auto my-2">
                 <table className="w-full text-left text-xs border-collapse border border-gray-200 dark:border-zinc-800">
+                <thead>
+                    <tr className="border-b border-gray-200 dark:border-zinc-800">
+                    <th scope="col" className="p-2 font-bold bg-gray-50 dark:bg-zinc-900 w-1/3">Campo</th>
+                    <th scope="col" className="p-2 font-bold bg-gray-50 dark:bg-zinc-900">Información</th>
+                    </tr>
+                </thead>
                 <tbody>
                     <tr className="border-b border-gray-200 dark:border-zinc-800">
                     <td className="p-2 font-bold bg-gray-50 dark:bg-zinc-900 w-1/3">Razón Social</td>
@@ -101,11 +107,9 @@ const sections = [
         {
         title: "Base de Licitud y Consentimiento",
         content: (
-            <>
             <p>
                 El tratamiento de datos se fundamenta en el consentimiento expreso otorgado libremente por el titular mediante casillas activas (para marketing), la ejecución del contrato de compraventa (para el procesamiento de compras), el cumplimiento de obligaciones legales tributarias/de consumo y el interés legítimo de la empresa.
             </p>
-            </>
         ),
         },
         {
@@ -170,41 +174,33 @@ const sections = [
         {
         title: "Transferencia Internacional de Datos",
         content: (
-            <>
             <p>
                 En caso de utilizar servicios de hosting o software en la nube ubicados fuera de Chile, INDUWORK garantiza que dichos proveedores cuenten con certificaciones internacionales de seguridad (ISO 27001, SOC 2) y cláusulas contractuales estándar equivalentes a la protección exigida por la ley chilena.
             </p>
-            </>
         ),
         },
         {
         title: "Adecuación a la Ley N° 21.719 (Hoja de Ruta)",
         content: (
-            <>
             <p>
                 Con miras a la plena vigencia de la Ley N° 21.719 fijada para el 1° de diciembre de 2026, INDUWORK SpA mantiene una hoja de ruta proactiva que contempla la mantención del Registro de Actividades de Tratamiento (RAT), evaluaciones de impacto (EIPD), protocolos de notificación de brechas y adaptación permanente de sus programas de privacidad desde el diseño.
             </p>
-            </>
         ),
         },
         {
         title: "Modificaciones a la Política de Privacidad",
         content: (
-            <>
             <p>
                 INDUWORK podrá actualizar este documento publicando la versión vigente en www.induwork.cl. En caso de cambios sustanciales que afecten derechos de los usuarios, se enviará una notificación previa por correo electrónico.
             </p>
-            </>
         ),
         },
         {
         title: "Contacto y Atención al Cliente",
         content: (
-            <>
             <p>
                 Para resolver dudas o ejercitar los derechos de protección de datos personales, el usuario puede enviar su consulta a través del formulario oficial en el sitio web de INDUWORK SpA o escribir directamente a los canales de atención al cliente.
             </p>
-            </>
         ),
         },
     ];

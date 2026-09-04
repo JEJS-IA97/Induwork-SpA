@@ -36,7 +36,7 @@ const LegalLayout = ({ title, lastUpdated, sections, darkMode, setDarkMode }) =>
             <nav className="flex flex-col gap-2.5 text-sm text-gray-600 dark:text-gray-400">
                 {sections.map((sec, idx) => (
                 <a
-                    key={idx}
+                    key={sec.title}
                     href={`#section-${idx}`}
                     className="transition-colors hover:text-[#f59a26] dark:hover:text-[#f59a26]"
                 >
@@ -52,7 +52,7 @@ const LegalLayout = ({ title, lastUpdated, sections, darkMode, setDarkMode }) =>
             <section className="lg:col-span-3 flex flex-col gap-6">
                 <div className="rounded-lg bg-white p-6 sm:p-10 shadow-md dark:bg-[#181818] flex flex-col gap-8">
                 {sections.map((sec, idx) => (
-                    <div key={idx} id={`section-${idx}`} className="flex flex-col gap-3 scroll-mt-28">
+                    <div key={sec.title} id={`section-${idx}`} className="flex flex-col gap-3 scroll-mt-28">
                     <div className="flex items-center gap-3">
                         <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-[#f59a26] text-xs font-bold text-white">
                         {idx + 1}

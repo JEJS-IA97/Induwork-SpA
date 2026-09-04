@@ -13,11 +13,11 @@ const HeroBanner = ({ darkMode }) => {
         <div className="absolute inset-0 flex flex-col items-start justify-center text-start text-black px-[60px] dark:text-white">
             <div className="w-[100px] h-[2px] bg-[#f59a26] mb-8"></div>
                 <h1 className="max-w-3xl text-5xl font-bold tracking-tight uppercase">
-                Equipo táctico
+                    Equipo táctico{" "}
                     <span className="block">y balístico</span>
                 </h1>
                 <p className="mt-4 max-w-xl text-lg sm:text-xl">
-                Calidad profesional para
+                    Calidad profesional para{" "}
                     <span className="block">quienes exigen lo mejor.</span>
                 </p>
 

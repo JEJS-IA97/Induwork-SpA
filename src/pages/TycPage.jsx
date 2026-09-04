@@ -174,31 +174,25 @@ const TermsConditionsPage = ({ darkMode, setDarkMode }) => {
         {
         title: "Propiedad Intelectual",
         content: (
-            <>
             <p>
                 Todos los contenidos de www.induwork.cl (textos, imágenes, marcas, logotipos, código fuente) son propiedad exclusiva de INDUWORK SpA o sus licenciantes. Queda prohibida su reproducción o distribución sin autorización previa por escrito.
             </p>
-            </>
         ),
         },
         {
         title: "Limitación de Responsabilidad",
         content: (
-            <>
             <p>
                 INDUWORK no se hace responsable por interrupciones del servicio por fallas técnicas o mantenimiento, informando siempre que sea posible. Lo anterior no limita en ningún caso los derechos irrenunciables del consumidor fijados en la Ley N°19.496.
             </p>
-            </>
         ),
         },
         {
         title: "Cláusulas Abusivas y Contratos de Adhesión",
         content: (
-            <>
             <p>
                 Los presentes TyC no contienen cláusulas que permitan la modificación unilateral del contrato perfeccionado, limitaciones absolutas de responsabilidad ni vacíos que generen un desequilibrio injustificado en perjuicio del consumidor.
             </p>
-            </>
         ),
         },
         {
@@ -220,21 +214,17 @@ const TermsConditionsPage = ({ darkMode, setDarkMode }) => {
         {
         title: "Modificaciones a los Términos y Condiciones",
         content: (
-            <>
             <p>
                 INDUWORK podrá actualizar los presentes TyC publicando la última versión en el sitio web. Las modificaciones aplicarán a las compras realizadas con posterioridad a dicha fecha de publicación.
             </p>
-            </>
         ),
         },
         {
         title: "Contacto y Atención al Cliente",
         content: (
-            <>
             <p>
                 Para consultas, reclamos o ejercicio de derechos legales o de protección de datos, el usuario puede contactar a INDUWORK SpA mediante los canales de atención habilitados en <strong>www.induwork.cl</strong>.
             </p>
-            </>
         ),
         },
     ];

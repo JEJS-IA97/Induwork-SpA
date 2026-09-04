@@ -3,6 +3,8 @@ import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import TermsConditionsPage from "./pages/TycPage";
 import PrivacyPolicesPage from "./pages/PrivacyPage";
+import ContactPage from "./pages/ContactPage";
+import NosotrosPage from "./pages/AboutUs";
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -39,6 +41,14 @@ function App() {
         <Route 
           path="/tienda/:categoria" 
           element={<HomePage darkMode={darkMode} setDarkMode={setDarkMode} />} 
+        />
+        <Route 
+          path="/contactanos" 
+          element={<ContactPage darkMode={darkMode} setDarkMode={setDarkMode} />} 
+        />
+        <Route 
+          path="/nosotros" 
+          element={<NosotrosPage darkMode={darkMode} setDarkMode={setDarkMode} />} 
         />
       </Routes>
     </div>

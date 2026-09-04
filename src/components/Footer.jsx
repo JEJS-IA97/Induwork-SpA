@@ -27,16 +27,16 @@ const Footer = ({ darkMode }) => {
                 <div className="grid grid-cols-1 sm:grid-cols-3 flex-1">
                     <div className="flex flex-col gap-2 text-sm text-gray-600 dark:text-[#c3c4c3]">
                         <h4 className="uppercase font-bold text-black dark:text-white mb-1">Productos</h4>
-                        <a href="#" className="hover:underline">Equipo Táctico</a>
-                        <a href="#" className="hover:underline">Equipo Balístico</a>
-                        <a href="#" className="hover:underline">Accesorios</a>
-                        <a href="#" className="hover:underline">Vestimenta industrial</a>
+                        <a href="/productos/equipo-tactico" className="hover:underline">Equipo Táctico</a>
+                        <a href="/productos/equipo-balistico" className="hover:underline">Equipo Balístico</a>
+                        <a href="/productos/accesorios" className="hover:underline">Accesorios</a>
+                        <a href="/productos/vestimenta-industrial" className="hover:underline">Vestimenta industrial</a>
                     </div>
 
                     <div className="flex flex-col gap-2 text-sm text-gray-600 dark:text-[#c3c4c3]">
                         <h4 className="uppercase font-bold text-black dark:text-white mb-1">Información</h4>
-                        <a href="#" className="hover:underline">Nosotros</a>
-                        <a href="#" className="hover:underline">Servicios</a>
+                        <a href="/nosotros" className="hover:underline">Nosotros</a>
+                        <a href="/servicios" className="hover:underline">Servicios</a>
                         <a href="/terminos-y-condiciones" className="hover:underline">Términos y condiciones</a>
                         <a href="/politica-de-privacidad" className="hover:underline">Política de privacidad</a>
                     </div>
