@@ -1,4 +1,4 @@
-import logo from "../assets/logo.svg";
+import logo from "../assets/Logo.svg";
 import logoB from "../assets/Logo-Blanco.svg";
 import { BsFillTelephoneFill, BsEnvelopeFill, BsGeoAltFill } from "react-icons/bs";
 

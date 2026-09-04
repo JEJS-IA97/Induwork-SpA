@@ -86,7 +86,7 @@ const NosotrosPage = ({ darkMode, setDarkMode }) => {
             <div className="rounded-lg bg-[#ffffff] shadow-md dark:bg-[#181818] flex flex-col overflow-hidden">
                 <div className="h-48 w-full overflow-hidden">
                     <img
-                    src="/images/about-us/Mision.webp"
+                    src="-m/images/about-us/Mision.webp"
                     alt="Nuestra Misión"
                     className="h-full w-full object-cover"
                     />

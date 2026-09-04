@@ -1,5 +1,5 @@
 import { BsPersonCircle, BsCart, BsFillSunFill, BsFillMoonFill, BsSearch } from "react-icons/bs";
-import logo from "../assets/logo.svg";
+import logo from "../assets/Logo.svg";
 import logoB from "../assets/Logo-Blanco.svg";
 
 const Navbar = ({ darkMode, setDarkMode }) => {
