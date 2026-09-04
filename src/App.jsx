@@ -6,6 +6,7 @@ import PrivacyPolicesPage from "./pages/PrivacyPage";
 import ContactPage from "./pages/ContactPage";
 import NosotrosPage from "./pages/AboutUs";
 import ServiciosPage from "./pages/ServicesPage";
+import CategoryPage from "./pages/CategoryPage";
 
 function App() {
 const [darkMode, setDarkMode] = useState(() => {
@@ -46,8 +47,12 @@ const [darkMode, setDarkMode] = useState(() => {
           element={<PrivacyPolicesPage darkMode={darkMode} setDarkMode={setDarkMode} />} 
         />
         <Route 
-          path="/tienda/:categoria" 
-          element={<HomePage darkMode={darkMode} setDarkMode={setDarkMode} />} 
+        path="/tienda" 
+        element={<CategoryPage darkMode={darkMode} setDarkMode={setDarkMode} />} 
+        />
+        <Route 
+        path="/tienda/:categoria" 
+        element={<CategoryPage darkMode={darkMode} setDarkMode={setDarkMode} />} 
         />
         <Route 
           path="/contactanos" 
