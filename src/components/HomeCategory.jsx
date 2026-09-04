@@ -13,7 +13,7 @@ const HomeCategory = () => {
                     className="flex flex-col items-center justify-center w-auto h-[200px] bg-white dark:bg-[#181818] rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-all duration-200 cursor-pointer p-[20px] gap-[10px]"
                     >
                     <img 
-                        src="/images/Categoria-01.png"
+                        src="/images/home/Categoria-01.png"
                         alt="Seguridad" 
                         className="w-auto h-[140px] object-contain" 
                     />
@@ -27,7 +27,7 @@ const HomeCategory = () => {
                     className="flex flex-col items-center justify-center w-auto h-[200px] bg-white dark:bg-[#181818] rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-all duration-200 cursor-pointer p-[20px] gap-[10px]"
                 >
                     <img 
-                        src="/images/Categoria-02.png"
+                        src="/images/home/Categoria-02.png"
                         alt="Equipo Táctico" 
                         className="w-auto h-[140px] object-contain" 
                     />
@@ -40,7 +40,7 @@ const HomeCategory = () => {
                     className="flex flex-col items-center justify-center w-auto h-[200px] bg-white dark:bg-[#181818] rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-all duration-200 cursor-pointer p-[20px] gap-[10px]"
                 >
                     <img 
-                        src="/images/Categoria-03.png"
+                        src="/images/home/Categoria-03.png"
                         alt="Equipo Balístico" 
                         className="w-auto h-[140px] object-contain" 
                     />
@@ -53,7 +53,7 @@ const HomeCategory = () => {
                     className="flex flex-col items-center justify-center w-auto h-[200px] bg-white dark:bg-[#181818] rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-all duration-200 cursor-pointer p-[20px] gap-[10px]"
                 >
                     <img 
-                        src="/images/Categoria-04.png"
+                        src="/images/home/Categoria-04.png"
                         alt="Accesorios" 
                         className="w-auto h-[140px] object-contain" 
                     />

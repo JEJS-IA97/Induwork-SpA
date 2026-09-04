@@ -8,16 +8,16 @@ const Clientes = () => {
 
       <div className="grid w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-center justify-center">
         <div className="w-full h-48 sm:h-56 lg:h-64 overflow-hidden rounded-lg bg-gray-100 dark:bg-[#181818] flex items-center justify-center">
-          <img src="/images/Cliente-01.jpg" alt="Cliente 1" className="h-full w-full object-contain p-4" />
+          <img src="/images/home/Cliente-01.jpg" alt="Cliente 1" className="h-full w-full object-contain p-4" />
         </div>
         <div className="w-full h-48 sm:h-56 lg:h-64 overflow-hidden rounded-lg bg-gray-100 dark:bg-[#181818] flex items-center justify-center">
-          <img src="/images/Cliente-02.jpg" alt="Cliente 2" className="h-full w-full object-contain p-4" />
+          <img src="/images/home/Cliente-02.jpg" alt="Cliente 2" className="h-full w-full object-contain p-4" />
         </div>
         <div className="w-full h-48 sm:h-56 lg:h-64 overflow-hidden rounded-lg bg-gray-100 dark:bg-[#181818] flex items-center justify-center">
-          <img src="/images/Cliente-03.jpg" alt="Cliente 3" className="h-full w-full object-contain p-4" />
+          <img src="/images/home/Cliente-03.jpg" alt="Cliente 3" className="h-full w-full object-contain p-4" />
         </div>
         <div className="w-full h-48 sm:h-56 lg:h-64 overflow-hidden rounded-lg bg-gray-100 dark:bg-[#181818] flex items-center justify-center">
-          <img src="/images/Cliente-04.jpg" alt="Cliente 4" className="h-full w-full object-contain p-4" />
+          <img src="/images/home/Cliente-04.jpg" alt="Cliente 4" className="h-full w-full object-contain p-4" />
         </div>
       </div>
     </div>

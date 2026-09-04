@@ -62,7 +62,7 @@ import { BsClockHistory, BsTools, BsPersonCheck, BsGeoAlt, BsGeoAltFill, BsFillT
         <section className="w-full px-6 md:px-[60px] mb-12">
             <div className="relative h-[220px] sm:h-[280px] w-full overflow-hidden rounded-lg shadow-md">
                 <img
-                src="/images/Contacto.jpg" 
+                src="/images/banners/Contacto.jpg" 
                 alt="Soporte Técnico Induwork"
                 className="absolute inset-0 h-full w-full object-cover"
                 />

@@ -5,10 +5,17 @@ import TermsConditionsPage from "./pages/TycPage";
 import PrivacyPolicesPage from "./pages/PrivacyPage";
 import ContactPage from "./pages/ContactPage";
 import NosotrosPage from "./pages/AboutUs";
+import ServiciosPage from "./pages/ServicesPage";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(() => {
-    return localStorage.getItem("theme") === "dark";
+const [darkMode, setDarkMode] = useState(() => {
+  const savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme) {
+      return savedTheme === "dark";
+    }
+
+    return true;
   });
 
   useEffect(() => {
@@ -49,6 +56,10 @@ function App() {
         <Route 
           path="/nosotros" 
           element={<NosotrosPage darkMode={darkMode} setDarkMode={setDarkMode} />} 
+        />
+        <Route 
+          path="/servicios" 
+          element={<ServiciosPage darkMode={darkMode} setDarkMode={setDarkMode} />}
         />
       </Routes>
     </div>
