@@ -1,6 +1,7 @@
 import logo from "../assets/Logo.svg";
 import logoB from "../assets/Logo-Blanco.svg";
 import { BsFillTelephoneFill, BsEnvelopeFill, BsGeoAltFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Footer = ({ darkMode }) => {
     return (
@@ -35,10 +36,18 @@ const Footer = ({ darkMode }) => {
 
                     <div className="flex flex-col gap-2 text-sm text-gray-600 dark:text-[#c3c4c3]">
                         <h4 className="uppercase font-bold text-black dark:text-white mb-1">Información</h4>
-                        <a href="/nosotros" className="hover:underline">Nosotros</a>
-                        <a href="/servicios" className="hover:underline">Servicios</a>
-                        <a href="/terminos-y-condiciones" className="hover:underline">Términos y condiciones</a>
-                        <a href="/politica-de-privacidad" className="hover:underline">Política de privacidad</a>
+                        <Link to="/nosotros" className="hover:underline">
+                            Nosotros
+                        </Link>
+                        <Link to="/servicios" className="hover:underline">
+                            Servicios
+                        </Link>
+                        <Link to="/terminos-y-condiciones" className="hover:underline">
+                            Términos y condiciones
+                        </Link>
+                        <Link to="/politica-de-privacidad" className="hover:underline">
+                            Política de privacidad
+                        </Link>
                     </div>
 
                     <div className="flex flex-col gap-3 text-sm text-gray-600 dark:text-[#c3c4c3]">

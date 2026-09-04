@@ -1,17 +1,26 @@
 import { BsPersonCircle, BsCart, BsFillSunFill, BsFillMoonFill, BsSearch } from "react-icons/bs";
 import logo from "../assets/Logo.svg";
 import logoB from "../assets/Logo-Blanco.svg";
+import { Link } from "react-router-dom";
 
 const Navbar = ({ darkMode, setDarkMode }) => {
   return (
     <nav className="fixed top-0 left-0 z-50 flex h-[80px] w-full items-center justify-between bg-white px-10 text-black shadow-sm transition-colors dark:bg-[#0d0d0d] dark:text-white">
-      <div className="flex shrink-0 items-center">
+      <Link to="/" className="flex shrink-0 items-center">
         {darkMode ? (
-            <img className="h-[55px] w-auto" src={logoB} alt="Logo Blanco" />
-          ) : (
-            <img className="h-[55px] w-auto" src={logo} alt="Logo" />
-          )}
-      </div>
+          <img
+            className="h-[55px] w-auto"
+            src={logoB}
+            alt="Logo Blanco"
+          />
+        ) : (
+          <img
+            className="h-[55px] w-auto"
+            src={logo}
+            alt="Logo"
+          />
+        )}
+      </Link>
 
       <div className="flex max-w-[700px] flex-1 items-center justify-center px-6">
         <div className="flex w-full items-center overflow-hidden rounded-md border bg-[#f5f5f5] dark:border-zinc-700 dark:bg-zinc-800">
