@@ -1,4 +1,4 @@
-import LegalLayout from "../components/LegalLayout";
+import LegalLayout from "../../components/legal/LegalLayout";
 
 const TermsConditionsPage = ({ darkMode, setDarkMode }) => {
     const sections = [

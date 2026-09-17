@@ -1,6 +1,6 @@
-import Navbar from "../components/Navbar";
-import NavRoutes from "../components/NavRoutes";
-import Footer from "../components/Footer";
+import Navbar from "../../components/layout/Navbar";
+import NavRoutes from "../../components/layout/NavRoutes";
+import Footer from "../../components/layout/Footer";
 import { Link } from "react-router-dom";
 
 const ServiciosPage = ({ darkMode, setDarkMode }) => {
@@ -79,9 +79,9 @@ const ServiciosPage = ({ darkMode, setDarkMode }) => {
 
                 <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent flex flex-col justify-center px-8 sm:px-12 text-white">
                 <div className="h-[2px] w-[30px] bg-[#f59a26] mb-3" />
-                <h2 className="text-xl sm:text-3xl font-bold uppercase tracking-wide">
+                <h1 className="text-xl sm:text-3xl font-bold uppercase tracking-wide">
                     Nuestros Servicios y Suministros
-                </h2>
+                </h1>
                 <p className="mt-2 max-w-lg text-sm sm:text-base text-gray-200">
                     Equipamiento táctico balístico, protección industrial y soluciones tecnológicas de vigilancia adaptadas a las exigencias operativas en Chile.
                 </p>
@@ -133,8 +133,8 @@ const ServiciosPage = ({ darkMode, setDarkMode }) => {
                     </div>
 
                     <ul className="flex flex-col gap-2.5 pt-2 border-t border-gray-100 dark:border-zinc-800">
-                    {s.puntos.map((p, i) => (
-                        <li key={i} className="flex items-center gap-2.5 text-xs text-gray-700 dark:text-gray-300">
+                    {s.puntos.map((p) => (
+                        <li key={p} className="flex items-center gap-2.5 text-xs text-gray-700 dark:text-gray-300">
                         <span className="text-[#f59a26] font-bold">✓</span>
                         <span>{p}</span>
                         </li>

@@ -1,5 +1,5 @@
-import logo from "../assets/Logo.svg";
-import logoB from "../assets/Logo-Blanco.svg";
+import logo from "../../assets/Logo.svg";
+import logoB from "../../assets/Logo-Blanco.svg";
 import { BsFillTelephoneFill, BsEnvelopeFill, BsGeoAltFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 

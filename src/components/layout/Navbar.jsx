@@ -1,9 +1,9 @@
 import { useState, useRef, useEffect } from "react";
 import { BsPersonCircle, BsCart, BsFillSunFill, BsFillMoonFill, BsSearch } from "react-icons/bs";
-import logo from "../assets/Logo.svg";
-import logoB from "../assets/Logo-Blanco.svg";
+import logo from "../../assets/Logo.svg";
+import logoB from "../../assets/Logo-Blanco.svg";
 import { Link, useNavigate, useLocation } from "react-router-dom";
-import data from "../data.json";
+import data from "../../data/data.json";
 
 const Navbar = ({ darkMode, setDarkMode, busquedaGlobal, setBusquedaGlobal }) => {
   const [query, setQuery] = useState(busquedaGlobal || "");

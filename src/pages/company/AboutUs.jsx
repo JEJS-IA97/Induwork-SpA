@@ -1,9 +1,9 @@
-import Navbar from "../components/Navbar";
-import NavRoutes from "../components/NavRoutes";
-import Footer from "../components/Footer";
+import Navbar from "../../components/layout/Navbar";
+import NavRoutes from "../../components/layout/NavRoutes";
+import Footer from "../../components/layout/Footer";
 import { BsShieldCheck, BsAward, BsTools } from "react-icons/bs";
-import HeroImagen from "/images/about-us/Nosotros-01.png";
-import HeroImagen2 from "/images/about-us/Nosotros-02.png";
+const HeroImagen = "/images/about-us/Nosotros-01.png";
+const HeroImagen2 = "/images/about-us/Nosotros-02.png";
 
 const NosotrosPage = ({ darkMode, setDarkMode }) => {
     const valores = [
@@ -42,9 +42,9 @@ const NosotrosPage = ({ darkMode, setDarkMode }) => {
 
                 <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent flex flex-col justify-center px-8 sm:px-12 text-white">
                 <div className="h-[2px] w-[30px] bg-[#f59a26] mb-3" />
-                <h2 className="text-xl sm:text-3xl font-bold uppercase tracking-wide">
+                <h1 className="text-xl sm:text-3xl font-bold uppercase tracking-wide">
                     Sobre Nosotros
-                </h2>
+                </h1>
                 <p className="mt-2 max-w-lg text-sm sm:text-base text-gray-200">
                     Especialistas en soluciones integrales de seguridad y protección
                 </p>
@@ -141,9 +141,9 @@ const NosotrosPage = ({ darkMode, setDarkMode }) => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {valores.map((valor, index) => (
+            {valores.map((valor) => (
                 <div 
-                key={index} 
+                key={valor.titulo} 
                 className="flex items-start gap-4 rounded-lg bg-[#ffffff] p-6 shadow-md transition-all hover:shadow-lg dark:bg-[#181818]"
                 >
                 <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-[#f59a26]/10 text-[#f59a26]">

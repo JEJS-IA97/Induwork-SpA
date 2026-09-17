@@ -1,13 +1,13 @@
 import { useState, useMemo } from "react";
 import { useParams, useSearchParams } from "react-router-dom";
-import Navbar from "../components/Navbar";
-import NavRoutes from "../components/NavRoutes";
-import Footer from "../components/Footer";
-import ShopCard from "../components/ShopCards";
-import SortDropdown from "../components/filters/SortDropdown";
-import FilterSidebar from "../components/filters/FilterSidebar";
+import Navbar from "../../components/layout/Navbar";
+import NavRoutes from "../../components/layout/NavRoutes";
+import Footer from "../../components/layout/Footer";
+import ShopCard from "../../components/catalog/ShopCards";
+import SortDropdown from "../../components/catalog/filters/SortDropdown";
+import FilterSidebar from "../../components/catalog/filters/FilterSidebar";
 import { BsGridFill, BsListUl } from "react-icons/bs";
-import data from "../data.json";
+import data from "../../data/data.json";
 
 const CategoryPage = ({ darkMode, setDarkMode }) => {
     const { categoria } = useParams();
@@ -68,9 +68,9 @@ const CategoryPage = ({ darkMode, setDarkMode }) => {
 
                     <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent flex flex-col justify-center px-8 sm:px-12 text-white">
                         <div className="h-[2px] w-[30px] bg-[#f59a26] mb-3" />
-                        <h2 className="text-xl sm:text-3xl font-bold uppercase tracking-wide">
+                        <h1 className="text-xl sm:text-3xl font-bold uppercase tracking-wide">
                             {categoria ? tituloPagina : "Equipamiento de Alto Rendimiento"}
-                        </h2>
+                        </h1>
                         <p className="mt-2 max-w-lg text-sm sm:text-base text-gray-200">
                             Soluciones certificadas en protección balística, seguridad industrial y vestimenta técnica para operaciones exigentes.
                         </p>

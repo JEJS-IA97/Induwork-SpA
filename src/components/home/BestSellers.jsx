@@ -1,13 +1,13 @@
 import HomeCards from "./HomeCards";
 import { BsArrowRight, BsCaretLeftFill, BsCaretRightFill } from "react-icons/bs";
-import data from "../data.json";
+import data from "../../data/data.json";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Link } from "react-router-dom";
 
-const News = () => {
+const BestSellers = () => {
     return (
         <div className="flex w-full flex-col gap-4 px-[60px] py-[40px] text-black dark:text-white">
 
@@ -15,7 +15,7 @@ const News = () => {
 
             <div className="flex items-center justify-between">
                 <h2 className="text-xl font-bold uppercase tracking-wide">
-                    Recien agregados 
+                    Productos destacados
                 </h2>
 
                 <Link
@@ -83,4 +83,4 @@ const News = () => {
     );
 };
 
-export default News
+export default BestSellers;

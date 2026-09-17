@@ -1,6 +1,6 @@
-import Navbar from './Navbar';
-import NavRoutes from './NavRoutes';
-import Footer from './Footer';
+import Navbar from '../layout/Navbar';
+import NavRoutes from '../layout/NavRoutes';
+import Footer from '../layout/Footer';
 
 const LegalLayout = ({ title, lastUpdated, sections, darkMode, setDarkMode }) => {
     return (

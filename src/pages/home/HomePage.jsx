@@ -1,11 +1,11 @@
-import HeroBanner from '../components/HeroBanner';
-import Navbar from '../components/Navbar';
-import Routes from '../components/NavRoutes';
-import HomeCategory from '../components/HomeCategory';
-import BestSellers from '../components/BestSellers';
-import News from '../components/News';
-import Footer from '../components/Footer';
-import Clientes from '../components/Clientes';
+import HeroBanner from '../../components/home/HeroBanner';
+import Navbar from '../../components/layout/Navbar';
+import Routes from '../../components/layout/NavRoutes';
+import HomeCategory from '../../components/home/HomeCategory';
+import BestSellers from '../../components/home/BestSellers';
+import News from '../../components/home/News';
+import Footer from '../../components/layout/Footer';
+import Clientes from '../../components/home/Clientes';
 
 const HomePage = ({ darkMode, setDarkMode }) => {
     return (

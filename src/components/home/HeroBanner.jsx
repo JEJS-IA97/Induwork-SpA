@@ -1,5 +1,5 @@
-import HeroImagen from "../assets/HeroBanner-01.jpg";
-import HeroImagen2 from "../assets/HeroBanner-02.jpg";
+import HeroImagen from "../../assets/HeroBanner-01.jpg";
+import HeroImagen2 from "../../assets/HeroBanner-02.jpg";
 
 const HeroBanner = ({ darkMode }) => {
     return (

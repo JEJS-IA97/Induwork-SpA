@@ -22,7 +22,7 @@ const NavRoutes = () => {
         name: "Empresa",
         path: "/nosotros",
         subLinks: [
-            { name: "Sobre Nosotros", path: "nosotros" },
+            { name: "Sobre Nosotros", path: "/nosotros" },
             { name: "Servicios", path: "/servicios" },
             { name: "Términos y Condiciones", path: "/terminos-y-condiciones" },
             { name: "Políticas de Privacidad", path: "/politica-de-privacidad" },
