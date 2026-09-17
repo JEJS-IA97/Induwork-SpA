@@ -116,6 +116,8 @@ const CategoryPage = ({ darkMode, setDarkMode }) => {
                                             precio={product.precio}
                                             rating={product.rating}
                                             reviewsCount={product.reviewsCount}
+                                            categoria={product.categoria}
+                                            slug={product.slug}
                                             viewMode={viewMode}
                                         />
                                     ))

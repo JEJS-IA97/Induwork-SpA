@@ -8,6 +8,7 @@ const ContactPage = lazy(() => import("./pages/contact/ContactPage"));
 const NosotrosPage = lazy(() => import("./pages/company/AboutUs"));
 const ServiciosPage = lazy(() => import("./pages/services/ServicesPage"));
 const CategoryPage = lazy(() => import("./pages/catalog/CategoryPage"));
+const ProductPage = lazy(() => import("./pages/catalog/ProductPage"));
 
 function App() {
     const [darkMode, setDarkMode] = useState(() => {
@@ -86,6 +87,16 @@ function App() {
                         path="/tienda/:categoria"
                         element={
                             <CategoryPage
+                                darkMode={darkMode}
+                                setDarkMode={setDarkMode}
+                            />
+                        }
+                    />
+
+                    <Route
+                        path="/tienda/:categoria/:slug"
+                        element={
+                            <ProductPage
                                 darkMode={darkMode}
                                 setDarkMode={setDarkMode}
                             />
