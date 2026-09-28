@@ -4,6 +4,7 @@ import logo from "../../assets/Logo.svg";
 import logoB from "../../assets/Logo-Blanco.svg";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import data from "../../data/data.json";
+import { useCart } from "../../context/CartContext";
 
 const Navbar = ({ darkMode, setDarkMode, busquedaGlobal, setBusquedaGlobal }) => {
   const [query, setQuery] = useState(busquedaGlobal || "");
@@ -11,6 +12,7 @@ const Navbar = ({ darkMode, setDarkMode, busquedaGlobal, setBusquedaGlobal }) =>
   const searchRef = useRef(null);
   const navigate = useNavigate();
   const location = useLocation();
+  const { cartCount } = useCart();
 
   const isShopPage = location.pathname.startsWith("/tienda");
   const resultadosDropdown = query.trim() === "" ? [] : data.filter((prod) =>
@@ -116,9 +118,20 @@ const Navbar = ({ darkMode, setDarkMode, busquedaGlobal, setBusquedaGlobal }) =>
           <p className="text-sm font-medium">Usuario</p>
         </div>
 
-        <button className="cursor-pointer text-xl transition-transform hover:scale-110">
-          <BsCart size={22} />
-        </button>
+        <Link
+            to="/carrito"
+            className="relative flex cursor-pointer items-center justify-center text-xl transition-transform hover:scale-110"
+            aria-label={`Carrito de compras${cartCount > 0 ? `, ${cartCount} productos` : ""}`}
+            title="Carrito"
+        >
+            <BsCart size={22} />
+
+            {cartCount > 0 && (
+                <span className="absolute -right-3 -top-3 flex h-5 min-w-5 items-center justify-center rounded-full bg-[#f59a26] px-1 text-[10px] font-bold leading-none text-white">
+                    {cartCount > 99 ? "99+" : cartCount}
+                </span>
+            )}
+        </Link>
       </div>
     </nav>
   );

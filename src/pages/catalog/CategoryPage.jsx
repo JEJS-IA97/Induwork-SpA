@@ -109,6 +109,7 @@ const CategoryPage = ({ darkMode, setDarkMode }) => {
                                     productosFiltrados.map((product) => (
                                         <ShopCard
                                             key={product.id}
+                                            id={product.id}
                                             imagen={product.imagen}
                                             nombre={product.nombre}
                                             subnombre={product.subnombre}

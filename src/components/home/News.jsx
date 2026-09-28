@@ -53,12 +53,15 @@ const News = () => {
                     {data.map((product) => (
                         <SwiperSlide key={product.id}>
                             <HomeCards
+                                id={product.id}
                                 imagen={product.imagen}
                                 nombre={product.nombre}
                                 subnombre={product.subnombre}
                                 precio={product.precio}
                                 rating={product.rating}
                                 reviewsCount={product.reviewsCount}
+                                categoria={product.categoria}
+                                slug={product.slug}
                             />
                         </SwiperSlide>
                     ))}

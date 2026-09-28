@@ -1,8 +1,15 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import { BsCart, BsStarFill } from "react-icons/bs";
+import {
+    BsCart,
+    BsCheckLg,
+    BsStarFill,
+} from "react-icons/bs";
 import { slugify } from "../../utils/slugify";
+import { useCart } from "../../context/CartContext";
 
 const ShopCard = ({
+    id,
     imagen,
     nombre,
     subnombre,
@@ -14,12 +21,15 @@ const ShopCard = ({
     slug,
     viewMode = "grid",
 }) => {
+    const { addToCart } = useCart();
+    const [agregado, setAgregado] = useState(false);
+
     const precioFormateado =
         typeof precio === "number"
             ? precio.toLocaleString("es-CL", {
-                    minimumFractionDigits: 0,
-                    maximumFractionDigits: 0,
-                })
+                  minimumFractionDigits: 0,
+                  maximumFractionDigits: 0,
+              })
             : "Consultar";
 
     const isList = viewMode === "list";
@@ -27,6 +37,28 @@ const ShopCard = ({
     const productSlug = slug || slugify(nombre);
     const categorySlug = slugify(categoria);
     const productUrl = `/tienda/${categorySlug}/${productSlug}`;
+
+    const handleAddToCart = (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+
+        addToCart({
+            id,
+            imagen,
+            nombre,
+            subnombre,
+            descripcion,
+            precio,
+            categoria,
+            slug: productSlug,
+        });
+
+        setAgregado(true);
+
+        window.setTimeout(() => {
+            setAgregado(false);
+        }, 1200);
+    };
 
     return (
         <div
@@ -37,9 +69,7 @@ const ShopCard = ({
             <Link
                 to={productUrl}
                 className={`flex min-w-0 flex-1 ${
-                    isList
-                        ? "h-full flex-row"
-                        : "h-full flex-col"
+                    isList ? "h-full flex-row" : "h-full flex-col"
                 }`}
             >
                 <div
@@ -65,7 +95,9 @@ const ShopCard = ({
                         <div className="flex items-start justify-between gap-4">
                             <h3
                                 className={`line-clamp-1 font-bold text-gray-900 dark:text-white ${
-                                    isList ? "text-lg" : "text-sm"
+                                    isList
+                                        ? "text-lg"
+                                        : "text-sm"
                                 }`}
                                 title={nombre}
                             >
@@ -144,14 +176,32 @@ const ShopCard = ({
 
             <button
                 type="button"
-                aria-label={`Agregar ${nombre} al carrito`}
-                className={`absolute flex h-8 w-8 cursor-pointer items-center justify-center rounded-md bg-[#f59a26] text-white shadow-sm transition-colors hover:bg-[#d8821a] active:scale-95 ${
+                onClick={handleAddToCart}
+                aria-label={
+                    agregado
+                        ? `${nombre} agregado al carrito`
+                        : `Agregar ${nombre} al carrito`
+                }
+                title={
+                    agregado
+                        ? "Producto agregado"
+                        : "Agregar al carrito"
+                }
+                className={`absolute flex h-8 w-8 cursor-pointer items-center justify-center rounded-md text-white shadow-sm transition-all duration-200 active:scale-95 ${
+                    agregado
+                        ? "bg-green-600 hover:bg-green-700"
+                        : "bg-[#f59a26] hover:bg-[#d8821a]"
+                } ${
                     isList
                         ? "bottom-6 right-6"
                         : "bottom-4 right-4"
                 }`}
             >
-                <BsCart size={14} />
+                {agregado ? (
+                    <BsCheckLg size={14} />
+                ) : (
+                    <BsCart size={14} />
+                )}
             </button>
         </div>
     );
